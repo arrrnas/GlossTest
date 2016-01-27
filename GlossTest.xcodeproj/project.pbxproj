@@ -13,6 +13,13 @@
 		37DFF7211C58A232008D1DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DFF71F1C58A232008D1DFF /* Main.storyboard */; };
 		37DFF7231C58A232008D1DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DFF7221C58A232008D1DFF /* Assets.xcassets */; };
 		37DFF7261C58A232008D1DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DFF7241C58A232008D1DFF /* LaunchScreen.storyboard */; };
+		37DFF7351C58A325008D1DFF /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFF72E1C58A325008D1DFF /* Decoder.swift */; };
+		37DFF7361C58A325008D1DFF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFF72F1C58A325008D1DFF /* Dictionary.swift */; };
+		37DFF7371C58A325008D1DFF /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFF7301C58A325008D1DFF /* Encoder.swift */; };
+		37DFF7381C58A325008D1DFF /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFF7321C58A325008D1DFF /* Gloss.swift */; };
+		37DFF7391C58A325008D1DFF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37DFF7331C58A325008D1DFF /* Info.plist */; };
+		37DFF73A1C58A325008D1DFF /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFF7341C58A325008D1DFF /* Operators.swift */; };
+		37DFF7411C58A37D008D1DFF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFF7401C58A37D008D1DFF /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		37DFF7221C58A232008D1DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37DFF7251C58A232008D1DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37DFF7271C58A232008D1DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37DFF72E1C58A325008D1DFF /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		37DFF72F1C58A325008D1DFF /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		37DFF7301C58A325008D1DFF /* Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		37DFF7311C58A325008D1DFF /* Gloss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gloss.h; sourceTree = "<group>"; };
+		37DFF7321C58A325008D1DFF /* Gloss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gloss.swift; sourceTree = "<group>"; };
+		37DFF7331C58A325008D1DFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37DFF7341C58A325008D1DFF /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		37DFF7401C58A37D008D1DFF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		37DFF7421C58AD33008D1DFF /* GlossTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlossTest-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +74,13 @@
 		37DFF7151C58A232008D1DFF /* GlossTest */ = {
 			isa = PBXGroup;
 			children = (
+				37DFF72D1C58A325008D1DFF /* Gloss */,
 				37DFF7191C58A232008D1DFF /* AppDelegate.h */,
 				37DFF71A1C58A232008D1DFF /* AppDelegate.m */,
 				37DFF71C1C58A232008D1DFF /* ViewController.h */,
 				37DFF71D1C58A232008D1DFF /* ViewController.m */,
+				37DFF7401C58A37D008D1DFF /* Post.swift */,
+				37DFF7421C58AD33008D1DFF /* GlossTest-Bridging-Header.h */,
 				37DFF71F1C58A232008D1DFF /* Main.storyboard */,
 				37DFF7221C58A232008D1DFF /* Assets.xcassets */,
 				37DFF7241C58A232008D1DFF /* LaunchScreen.storyboard */,
@@ -77,6 +96,20 @@
 				37DFF7171C58A232008D1DFF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37DFF72D1C58A325008D1DFF /* Gloss */ = {
+			isa = PBXGroup;
+			children = (
+				37DFF72E1C58A325008D1DFF /* Decoder.swift */,
+				37DFF72F1C58A325008D1DFF /* Dictionary.swift */,
+				37DFF7301C58A325008D1DFF /* Encoder.swift */,
+				37DFF7311C58A325008D1DFF /* Gloss.h */,
+				37DFF7321C58A325008D1DFF /* Gloss.swift */,
+				37DFF7331C58A325008D1DFF /* Info.plist */,
+				37DFF7341C58A325008D1DFF /* Operators.swift */,
+			);
+			path = Gloss;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DFF7391C58A325008D1DFF /* Info.plist in Resources */,
 				37DFF7261C58A232008D1DFF /* LaunchScreen.storyboard in Resources */,
 				37DFF7231C58A232008D1DFF /* Assets.xcassets in Resources */,
 				37DFF7211C58A232008D1DFF /* Main.storyboard in Resources */,
@@ -150,7 +184,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				37DFF71E1C58A232008D1DFF /* ViewController.m in Sources */,
+				37DFF73A1C58A325008D1DFF /* Operators.swift in Sources */,
+				37DFF7381C58A325008D1DFF /* Gloss.swift in Sources */,
+				37DFF7361C58A325008D1DFF /* Dictionary.swift in Sources */,
+				37DFF7371C58A325008D1DFF /* Encoder.swift in Sources */,
 				37DFF71B1C58A232008D1DFF /* AppDelegate.m in Sources */,
+				37DFF7411C58A37D008D1DFF /* Post.swift in Sources */,
+				37DFF7351C58A325008D1DFF /* Decoder.swift in Sources */,
 				37DFF7181C58A232008D1DFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +303,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GlossTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = abc.GlossTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlossTest/GlossTest-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -274,10 +316,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GlossTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = abc.GlossTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlossTest/GlossTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -300,6 +344,7 @@
 				37DFF72C1C58A232008D1DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

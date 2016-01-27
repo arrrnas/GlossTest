@@ -1,12 +1,5 @@
-//
-//  ViewController.m
-//  GlossTest
-//
-//  Created by Arnas Dundulis on 1/27/16.
-//  Copyright © 2016 abc. All rights reserved.
-//
-
 #import "ViewController.h"
+#import "GlossTest-Swift.h"
 
 @interface ViewController ()
 
@@ -16,12 +9,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    NSString *dataUrl = @"http://jsonplaceholder.typicode.com/posts";
+    NSURL *url = [NSURL URLWithString:dataUrl];
+    
+    void (^completion)(NSData *data, NSURLResponse *response, NSError *error) = ^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSError *e = nil;
+        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: data options: NSJSONReadingMutableContainers error: &e];
+        
+        if (!jsonArray) {
+            NSLog(@"Error parsing JSON: %@", e);
+        } else {
+            Posts *posts = [[Posts alloc] initWithJsonArray:jsonArray];
+            for(Post *item in posts.posts) {
+                NSLog(@"Item: %@", item.body);
+            }
+        }
+    };
+    NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:completion];
+    
+    [downloadTask resume];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
